@@ -1,7 +1,7 @@
 import os
 import re
 
-repo_path = '.'  # root of the repo
+repo_path = '.' 
 
 for root, dirs, files in os.walk(repo_path):
     for file in files:
