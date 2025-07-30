@@ -21,3 +21,5 @@ jobs:
 
       - name: Run Python script
         run: python .github/scripts/script.py
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

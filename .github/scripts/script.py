@@ -4,9 +4,13 @@ from openai import OpenAI
 
 repo_path = '.' 
 
+api_key = os.getenv("OPENROUTER_API_KEY")
+if not api_key:
+    raise ValueError("API key not found in environment variables")
+
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key=api_key,
 )
 
 for root, dirs, files in os.walk(repo_path):
