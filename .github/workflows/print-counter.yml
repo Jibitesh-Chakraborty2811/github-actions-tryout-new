@@ -1,4 +1,4 @@
-name: Count Print Statements
+name: Code Summarizer with Deepseek R1 and Github Actions
 
 on:
   push:
