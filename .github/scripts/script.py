@@ -24,7 +24,7 @@ for root, dirs, files in os.walk(repo_path):
                     #print(f"{file_path}: {count} print statement(s)")
                     completion = client.chat.completions.create(
                         extra_body={},
-                        model="qwen/qwen3-coder:free",
+                        model="deepseek/deepseek-r1-0528-qwen3-8b:free",
                         messages=[
                             {
                                 "role": "assisstant",
