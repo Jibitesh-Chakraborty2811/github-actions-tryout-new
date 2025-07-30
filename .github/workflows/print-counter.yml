@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  count-prints:
+  Code Summarizer with Deepseek R1 and Github Actions:
     runs-on: ubuntu-latest
 
     steps:
