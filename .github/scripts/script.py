@@ -19,7 +19,7 @@ for root, dirs, files in os.walk(repo_path):
                     #count = len(re.findall(r'\bprint\s*\(', content))
                     #print(f"{file_path}: {count} print statement(s)")
                     completion = client.chat.completions.create(
-                    
+                        extra_body={},
                         model="qwen/qwen3-coder:free",
                         messages=[
                             {
